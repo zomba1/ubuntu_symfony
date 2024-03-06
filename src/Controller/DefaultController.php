@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Attribute\Route;
 class DefaultController extends AbstractController
 {
     #[Route('/default', name: 'app_default')]
-    public function index(EntityManagerInterface $em): Response
+    public function index(): Response
     {
         #$info = (new Info())
         #    ->setTitle('Info number 4')
